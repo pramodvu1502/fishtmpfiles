@@ -53,6 +53,11 @@ It also misuses it to override and force configuration files, including ssh conf
 
 I am writing `fishtmpfiles` *only* because `systemd-tmpfiles` decides not to run because I have `/` mounted in a non-systemd way.
 It will *never* be completed I think, as it is easy to workaround and just use the small bits and pieces of systemd.
+It was started just for the purpose of shimming `systemd-tmpfiles` while bootstrapping gentoo, where mounts when not the way systemd likes, will fail `systemd-tmpfiles` and the many small important file-creation tasks.
+It might never support cleanup and the other long-term-usable features... (Will it even get past a small incomplete unusable parser script and "personal note"s?)
+
+I have other priorities, sorry, I might not be able to cmplete this to a remotely usable state.
+My priorities include: `66`, `66-dbus-launch`, many frontends for it for use in gentoo and alpine.
 
 # fishtmpfiles
 **NOTE:** IT IS NOT YET IN A USABLE STATE; UNDER CONSTRUCTION
